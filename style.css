@@ -119,7 +119,7 @@ div.section-grise2{
 
 h2{
     text-align: center;
-    font-size: 34;
+    font-size: 34px;
     margin-top: 0;
 	margin-bottom: 40px; 
 }
@@ -236,7 +236,7 @@ a.profolio-back{
 
 img.profolio{
     width: 70%;
-    max-width: 475px ;
+    /* max-width: 475px ; */
 }
 
 .display-mobile{
@@ -255,7 +255,7 @@ overflow: auto;
 }
 
 .Menu{
-padding: 100vh, 100vw; 
+/* padding: 100vh, 100vw;  */
 bottom: 1em;
 right: 1em;	
 position: fixed; 
@@ -264,6 +264,8 @@ z-index: 1 ;
 
 .btn-circle {
 background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+background: rgb(78,39,177);
+background-image: linear-gradient(120deg, rgba(176,87,217,1) 0%, rgba(223,109,156,1) 50%, rgba(176,87,217,1) 100%);
 /* display: block; */
 width: 5em; 
 height: 5em; 
@@ -304,10 +306,10 @@ box-shadow: 0 0 20px rgba(14, 14, 14, 0.7);
 }
 
 .btn-circle:hover {
-		background-position: right; 
-		color: #fff;
-		width: 6em; 
-		height: 6em; 
+    background-position: right; 
+    color: #fff;
+    width: 6em; 
+    height: 6em; 
 }
 
 .btn-circle.menu-anim .line:nth-child(1){
@@ -326,7 +328,7 @@ box-shadow: 0 0 20px rgba(14, 14, 14, 0.7);
     transform 0.2s ease 0.2s;
 }
 .circle-menu {
-background: linear-gradient(120deg, rgba(55, 81, 129, 0.7) 0%, rgba(88, 88, 88, 0.8) 51%, rgba(55, 81, 129, 0.7) 100%);
+background: linear-gradient(120deg, rgba(136, 95, 238, 0.7) 0%, rgba(168, 116, 193, 0.8) 51%, rgba(136, 95, 238, 0.7) 100%);
 background-size: 200% auto;
 width: 12em;
 height: 12em;
@@ -341,8 +343,8 @@ mix-blend-mode: difference;
 }
 
 .circle-menu.menu-anim{
-    transition: 0.4s ease;
-    background-position: right; 
+transition: 0.4s ease;
+background-position: right; 
 }
 
 .circle-menu.circle-anim {
@@ -438,8 +440,14 @@ pointer-events: none;
   .one {width: 45%;}
   .two {width: 25%;}
   .three {width: 20%;}
+  .four {width: 15%;}
+  .five {width: 10%;}
 
 @media only screen and (max-width: 767px){
+
+    .Menu{
+        display: none;
+    }
     
     img.cover-profile{
         height: 90px;
@@ -469,7 +477,7 @@ pointer-events: none;
     }
 
     h2{
-        font-size: 30;
+        font-size: 30px;
     }
 
 
@@ -502,7 +510,7 @@ pointer-events: none;
     }
 
     .shadow{
-        box-shadow: 0px;
+        box-shadow: none;
         margin-bottom: 30px;
     }
 
