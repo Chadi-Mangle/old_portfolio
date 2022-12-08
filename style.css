@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 /* a{
 
 } */
@@ -177,6 +181,16 @@ div.barre-verticale{
 .col-portfolio{
     width:48%;
 }
+
+.col-portfolio img{
+    transition: box-shadow 0.2s ease;
+}
+
+.col-portfolio img:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    transition: box-shadow 0.2s ease;
+}
+
 
 
 div.frame{
@@ -418,30 +432,32 @@ pointer-events: none;
     width: 100%;
     background-color: #ddd;
       margin-top: 5px; 
+      border-radius: 20px;
   }
   
   .skills {
-    text-align: right;
+    text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
       padding-right: 7px;
     color: white;
-      border-radius: 0 20px 20px 0;
+      border-radius: 20px;
       background-color: #D89584;
+      width: 100%;
   }
   
-  .abs{
+  /* .abs{
       padding: 5px; 
       position: absolute; 
       
-  }
+  } */
   
   
-  .one {width: 45%;}
+  /* .one {width: 45%;}
   .two {width: 25%;}
   .three {width: 20%;}
   .four {width: 15%;}
-  .five {width: 10%;}
+  .five {width: 10%;} */
 
 @media only screen and (max-width: 767px){
 
